@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 20%;
+}
+
+.my-clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+}
+
+#title {
+  margin-right: 5%;
+}
+
+#face {
+  background-color: #f3f3f3;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  border: 6px solid black;
+  position: relative;
+}
+
+#twelve,
+#three-nine,
+#six {
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+#twelve {
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 35%;
+}
+
+#three-nine {
+  justify-content: space-between;
+  width: 98%;
+  margin-bottom: 39%;
+  margin-left: 1%;
+}
+
+#six {
+  justify-content: center;
+  width: 100%;
+}
+
+#minutes,
+#hour,
+#seconds {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: top center;
+}
+
+#seconds {
+  background-color: red;
+  height: 130px;
+  width: 2px;
+}
+
+#hour {
+  background-color: black;
+  height: 100px;
+  width: 8px;
+  transform: rotate(125deg);
+}
+
+#minutes {
+  background-color: grey;
+  height: 120px;
+  width: 4px;
+  transform: rotate(255deg);
+}
+
+/* animation section */
+
+/* text color for 'my clock' text */
+.changeColor {
+  background-color: black;
+  color: lightpink;
+  box-shadow: 3px 3px 5px lightpink;
+  transition: 300ms;
+  border-radius: 8%;
+  font-size: 200%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* background color for the clock image */
+.backColor {
+  border-radius: 10%;
+  box-shadow: 5px 5px 20px lightpink;
+}
+
+/* TBA */
+.numColor {
+  text-shadow: 4px 4px 10px lightpink;
+  color: red;
+}

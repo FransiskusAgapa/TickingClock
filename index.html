@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TickingClock</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="my-clock">
+      <h1
+        id="title"
+        onmouseover="textColorOn(this)"
+        onmouseout="textColorOff(this)"
+      >
+        My Clock
+      </h1>
+      <div
+        id="face"
+        onmouseover="backColorOn(this)"
+        onmouseout="backColorOff(this)"
+      >
+        <div id="nums">
+          <p id="twelve">12</p>
+          <div id="three-nine">
+            <p>9</p>
+            <p>3</p>
+          </div>
+          <p id="six">6</p>
+          <div id="seconds"></div>
+          <div id="minutes"></div>
+          <div id="hour"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
