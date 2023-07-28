@@ -11,7 +11,7 @@ function getSecondsSinceStartOfDay() {
 }
 
 setInterval(function () {
-  var time = getSecondsSinceStartOfDay();
+  let time = getSecondsSinceStartOfDay();
   console.log(time);
 
   // SECOND

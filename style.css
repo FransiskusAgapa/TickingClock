@@ -17,6 +17,8 @@ body {
 
 #title {
   margin-right: 5%;
+  box-shadow: 3px 3px 5px black;
+  border-radius: 10%;
 }
 
 #face {
@@ -25,6 +27,7 @@ body {
   height: 50%;
   border-radius: 50%;
   border: 6px solid black;
+  box-shadow: 3px 3px 20px black;
   position: relative;
 }
 
